@@ -1,0 +1,19 @@
+<h2 id="msg">Aguardando clique...</h2>
+<button id="btn">Clique aqui</button>
+<button id="btnApagar">Apagar</button>
+
+<script>
+  const btn     = document.querySelector("#btn");
+  const apagar  = document.querySelector("#btnApagar");
+  const msg     = document.querySelector("#msg");
+
+  btn.addEventListener("click", () => {
+    msg.textContent = "Você interagiu com o DOM!";
+    msg.style.color = "green";
+  });
+
+  apagar.addEventListener("click", () => {
+    msg.textContent = "Aguardando clique...";
+    msg.style.color = "";
+  });
+</script>

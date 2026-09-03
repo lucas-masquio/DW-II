@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typecode"
+    },
+    {
+      "id": "2",
+      "titel": "Hello React!",
+      "author": "Masquio Spider-Punk"
+    },
+    {
+      "nome": "olá",
+      "preco": 0,
+      "categoria": "Outros",
+      "id": "L1vcxGeCXwQ"
+    },
+    {
+      "nome": "isdnviqen",
+      "preco": 0,
+      "categoria": "Outros",
+      "id": "ivHvElSer_Y"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Aluno "
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
