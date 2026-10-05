@@ -47,6 +47,20 @@ const { body, validationResult } = require('express-validator');
  *          400:
  *              description: Erro de validação ou e-mail já cadastrado.
  */
+const verifyToken = (req, res, next) => {
+    const token = req.cookies.jwt;
+    console.log('Cookies recebido no middleware:', req.cookies);
+
+    if (!token) {
+        return res.status(401).json({
+            success: false,
+            error: 'UNAUTHORIZED',
+            message: 'Acesso negado. Token não fornecido.'
+        });
+    }
+
+    next();
+};
 router.post(
 '/register', 
      [
